@@ -7,7 +7,8 @@ body:
     attributes:
       value: |
         Thank you for taking your time to file a translation issue! Please make sure to give it a correct title.  
-        e.g. [de-DE] [Taskbar] "Von Taskleiste lösen"
+        e.g. [de-DE] [Taskbar] "Von Taskleiste lösen"  
+        **Please do not file reports related to apps you can find in the Microsoft Store - those are unfortunately not covered by Windows language packs, even if they ship with Windows.**
   - type: input
     id: language
     attributes:
