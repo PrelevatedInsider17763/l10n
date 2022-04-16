@@ -1,4 +1,4 @@
-name: "[TEST] Report an incorrect translation in Windows"
+name: "Report an incorrect translation in Windows"
 description: Describe an incorrect translation and suggest how to make it better.
 title: "[language-CODE] [App Name] \"Quoted bad translation\""
 labels: ["bug"]
@@ -6,7 +6,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for taking your time to file a translation issue! Please make sure to give it a correct title. [e.g. [de-DE] [Taskbar] "Von Taskleiste lösen"]
+        Thank you for taking your time to file a translation issue! Please make sure to give it a correct title.  
+        e.g. [de-DE] [Taskbar] "Von Taskleiste lösen"
   - type: input
     id: language
     attributes:
@@ -31,7 +32,7 @@ body:
       placeholder: The less cropping the better so we can figure out exactly where this issue is located.
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: details
     attributes:
       label: Details
@@ -39,7 +40,7 @@ body:
       placeholder: e.g. Words used in translation look out of place in this context.
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: solution
     attributes:
       label: Proposed solution
