@@ -1,4 +1,4 @@
-name: [TEST] Report an incorrect translation in Windows
+name: "[TEST] Report an incorrect translation in Windows"
 description: Describe an incorrect translation and suggest how to make it better.
 title: "[language-CODE] [App Name] "Quoted bad translation""
 labels: ["bug"]
