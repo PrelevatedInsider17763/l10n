@@ -1,0 +1,49 @@
+name: [TEST] Report an incorrect translation in Windows
+description: Describe an incorrect translation and suggest how to make it better.
+title: "[language-CODE] [App Name] "Quoted bad translation""
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking your time to file a translation issue! Please make sure to give it a correct title. [e.g. [de-DE] [Taskbar] "Von Taskleiste lösen"]
+  - type: input
+    id: language
+    attributes:
+      label: Language
+      description: Which language pack is this issue present in?
+      placeholder: e.g. German (Germany)
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Affected version(s)
+      description: Which version of Windows can this issue be found in?
+      placeholder: e.g. Windows 11 build 22000.613
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot
+      description: Please include/paste a screenshot of the incorrect translation.
+      placeholder: The less cropping the better so we can figure out exactly where this issue is located.
+    validations:
+      required: true
+  - type: input
+    id: details
+    attributes:
+      label: Details
+      description: Describe why the translation shown above is incorrect.
+      placeholder: e.g. Words used in translation look out of place in this context.
+    validations:
+      required: true
+  - type: input
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: Suggest a better translation and briefly explain what it improves.
+      placeholder: e.g. "Icon entfernen" The meaning of the action is clearer and sheds the awkward machine translation impression. In case this area had a better translation in the past please specify which was the last good version you remember using.
+    validations:
+      required: true
