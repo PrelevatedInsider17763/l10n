@@ -54,7 +54,7 @@ body:
     id: solution
     attributes:
       label: Proposed solution
-      description: Suggest a better translation and briefly explain what it improves.
-      placeholder: e.g. "Icon entfernen" The meaning of the action is clearer and sheds the awkward machine translation impression. In case this area had a better translation in the past please specify which was the last good version you remember using.
+      description: Suggest a better translation and briefly explain what it improves. If the text in question had a better translation in the past please mention the last correct version you remember using.
+      placeholder: e.g. "Icon entfernen" The meaning of the action is clearer and sheds the awkward machine translation impression.
     validations:
       required: true
