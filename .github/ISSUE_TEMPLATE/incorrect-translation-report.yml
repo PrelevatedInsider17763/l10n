@@ -6,9 +6,18 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for taking your time to file a translation issue! Please make sure to give it a correct title.  
-        e.g. [de-DE] [Taskbar] "Von Taskleiste lösen"  
-        **Please do not file reports related to apps you can find in the Microsoft Store - those are unfortunately not covered by Windows language packs, even if they ship with Windows.**
+        Thank you for taking your time to file a translation issue!  
+        Please make sure to give it a correct title. e.g. _[de-DE] [Taskbar] "Von Taskleiste lösen"_
+  - type: dropdown
+    id: store-origin
+    attributes:
+      label: Store origin
+      description: Is the issue you're reporting related to an app from the Microsoft Store?
+      options:
+        - No
+        - Yes
+    validations:
+      required: true
   - type: input
     id: language
     attributes:
@@ -29,7 +38,7 @@ body:
     id: screenshot
     attributes:
       label: Screenshot
-      description: Please include/paste a screenshot of the incorrect translation.
+      description: Please include/paste a screenshot of the incorrect translation in the field below.
       placeholder: The less cropping the better so we can figure out exactly where this issue is located.
     validations:
       required: true
