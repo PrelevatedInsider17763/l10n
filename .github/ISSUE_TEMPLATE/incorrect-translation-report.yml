@@ -14,8 +14,8 @@ body:
       label: Store origin
       description: Is the issue you're reporting related to an app from the Microsoft Store?
       options:
-        - No
-        - Yes
+        - "No"
+        - "Yes"
     validations:
       required: true
   - type: input
